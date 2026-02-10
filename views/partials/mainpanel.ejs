@@ -24,10 +24,11 @@
                     <div class="me-3">
                         <img src="pfp.avif" alt="profile" class="pfp">
                     </div>
-                    <div class="flex-grow-1">
-                        <p class="mb-1 fw-bold">Chlarence Suguitan</p>
-                        <p class="mb-0"><%= chirp.content %></p>
-                    </div>
+                    <a href="/posts/<%= chirp.id %>">
+                        <div class="flex-grow-1">
+                            <p class="mb-1 fw-bold">Chlarence Suguitan</p>
+                            <p class="mb-0"><%= chirp.content %></p>
+                        </div>
                     <%= console.log(chirps)  %>
                 </div>
             <% } %>
