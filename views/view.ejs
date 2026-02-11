@@ -5,8 +5,21 @@
         <%- include('partials/sidebar.ejs')  %>
         
         <div class="mainpanel col-xs-12 col-md-9 col-lg-6 rounded bg-light">
-             <%= chirp.content  %>
+            <div class="chirp d-flex p-3 border-bottom rounded">
+                <div class="me-3">
+                    <img src="/pfp.avif" alt="profile" class="pfp">
+                </div>
+                <div class="flex-grow-1">
+                    <a href="/posts/<%= chirp.id %>">
+                        <p class="mb-1 fw-bold">Chlarence Suguitan</p>
+                        <p class="mb-0"><%= chirp.content %></p>
+                    </a>
+                </div>
+            </div>
+
         </div>
+        
+        
         <%- include('partials/rightpanel.ejs')  %>
     </div>
 </div>
