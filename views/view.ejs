@@ -5,7 +5,7 @@
         <%- include('partials/sidebar.ejs')  %>
         
         <div class="mainpanel col-xs-12 col-md-9 col-lg-6 rounded bg-light">
-            <div class="chirp d-flex p-3 border-bottom rounded">
+            <div class="chirp d-flex p-3 border-bottom rounded">    
                 <div class="me-3">
                     <img src="/pfp.avif" alt="profile" class="pfp">
                 </div>
@@ -14,6 +14,13 @@
                         <p class="mb-1 fw-bold">Chlarence Suguitan</p>
                         <p class="mb-0"><%= chirp.content %></p>
                     </a>
+                </div>
+                <div class="menu">
+                    <span class="dots">⋮</span>
+                        <div class="menu-options">
+                            <a href="#">Edit</a>
+                            <a href="#">Delete</a>
+                        </div>
                 </div>
             </div>
 

@@ -64,3 +64,41 @@ a{
     text-decoration:none;
     color:black;
 }
+
+
+
+
+
+.menu {
+  position: relative;
+  display: inline-block;
+}
+
+.dots {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.menu-options {
+  display: none;
+  position: absolute;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  min-width: 100px;
+}
+
+.menu:hover .menu-options {
+  display: block;
+}
+
+.menu-options a {
+  display: block;
+  padding: 6px 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.menu-options a:hover {
+  background: #eee;
+}
